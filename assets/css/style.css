@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chathura", sans-serif;
+}
+
+/* =========== nav ========== */
+
+nav {
+  background-color: rgb(1, 43, 43);
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  /* border: 1px solid green; */
+  /* margin-top: 1rem; */
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  color: aliceblue;
+}
+.menu {
+  /* border: 1px solid green; */
+  /* margin-top: 1rem; */
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+li {
+  margin-top: 0.5rem;
+}
+.nav-link {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav-link:hover {
+  background-color: #333;
+  color: aquamarine;
+}
+.burger-menu {
+  /* border: 1px solid green; */
+  margin-top: 0.5rem;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20px;
+  width: 20px;
+}
+
+.burger-menu > div {
+  height: 3px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+/* ============= main ============= */
+
+.main {
+  margin-top: 3rem;
+  /* border: 1px solid blue; */
+}
+
+/* ============= form =============== */
+
+.add-user {
+  /* border: 1px solid green; */
+  margin: 1rem 0;
+}
+
+.add-link {
+  color: black;
+  text-decoration: none;
+}
+.add-link:hover {
+  color: rgb(48, 90, 48);
+}
+.user-icon {
+  padding-left: 0.5rem;
+}
+.input-field {
+  color: #707070;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  background-color: rgb(59, 70, 39);
+  color: aliceblue;
+}
+
+/* ============= @media query ============= */
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  ul {
+    flex-direction: column;
+    /* align-self: start; */
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+  .burger-menu {
+    display: flex;
+  }
+}

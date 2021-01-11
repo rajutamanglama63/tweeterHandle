@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="main">
+        <div class="add-user">
+            <a href="/adduser" class="add-link">Add user <span class="user-icon"><i class="fa fa-user" aria-hidden="true"></i></span></a>
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% for(var i = 0; i < users.length; i++) { %>
+              <tr>
+                <th scope="row"><%= i + 1 %></th>
+                <td><%= users[i].first %></td>
+                <td><%= users[i].last %></td>
+                <td>@<%= users[i].handle %></td>
+              </tr>
+              <% } %>
+            </tbody>
+        </table>
+    </div>
+</div>
